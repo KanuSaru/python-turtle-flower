@@ -1,2 +1,61 @@
-# python-turtle
+# Turtle Flower Pattern
 
+This is a simple Python program that uses the **Turtle Graphics** library to draw colorful flower-like patterns. Each pattern is generated using random colors and different angles, creating unique designs every time you run the code.
+
+---
+
+## Requirements
+
+* Python 3.x
+* `turtle` (included with Python)
+* `time` (included with Python)
+* `random` (included with Python)
+
+---
+
+## How It Works
+
+1. The program sets up the Turtle environment with:
+
+   * A black background
+   * A random color for each run
+   * A drawing speed of zero (maximum speed)
+
+2. It defines:
+
+   * `zero_out_turtle()`: Resets the turtle to the center and facing forward.
+   * `flower(repetitions, angle)`: Draws a petal-like pattern using the given number of repetitions and rotation angle.
+
+3. The main loop:
+
+   * Iterates through increasing angles (from 3 to 19)
+   * Draws a new flower each time
+   * Waits for one second before resetting the turtle position
+
+---
+
+## Running the Program
+
+Run the script in a Python environment that supports Turtle graphics (for example, the standard Python IDLE):
+
+```bash
+python main.py
+```
+
+Each iteration will display a new flower pattern for one second before the next one appears.
+
+---
+
+## Customization
+
+* **Change the angle multiplier** in the loop to create different shapes:
+
+  ```python
+  flower(300, i * 2)
+  ```
+* **Modify the background color**:
+
+  ```python
+  turtle.bgcolor("blue")
+  ```
+* **Adjust repetitions** to make the pattern denser or sparser.
